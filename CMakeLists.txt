@@ -1,8 +1,7 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(charteado VERSION 0.1.0)
 
-set(OpenCV_DIR E:\\Recursos\\opencv\\build\\x64\\vc15\\lib)
-set(EXECUTABLE_OUTPUT_PATH E:\\Andozianos\\charteado\\build)
+set(EXECUTABLE_OUTPUT_PATH build)
 find_package( OpenCV REQUIRED )
 
 add_executable(hist samples/histogramas.cpp)

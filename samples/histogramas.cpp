@@ -5,12 +5,12 @@
 using namespace std;
 using namespace cv;
 
-void main(int argc, char* argv[])
+int main(int argc, char* argv[])
 {
-	Mat teste = imread("E:\\Andozianos\\charteado\\img\\face.jpg");		
+    Mat teste = imread("/home/bruno/projetos/charteado/img/nature.jpg");
 	Mat mat = chato::HsvImage1DHist(teste, 1280, 720, true);
 	imshow("teste", mat);	
 	waitKey();
 	
-	
+    return 0;
 }
